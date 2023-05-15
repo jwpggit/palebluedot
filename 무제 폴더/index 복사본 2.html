@@ -1,0 +1,41 @@
+<div module="product_listmain_1">
+    <!--@css(/css/module/product/2975/listmain_1.css)-->
+        <!--
+            $count = 10
+            $basket_result = /product/add_basket.html
+            $basket_option = /product/basket_option.html
+        -->
+        <h2><span>{$category_title_text}</span></h2>
+        <ul class="prdList column5">
+            <li class="item" id="anchorBoxId_{$product_no}">
+                <div class="box">
+                    <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+                    <div class="status">
+                        <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                    </div>
+                    <p class="name">
+                        <a href="/product/detail.html{$param}" class="{$product_name_display|display}"><strong class="title {$product_name_title_display|display}">{$product_name_title} :</strong> {$product_name}</a>
+                    </p>
+                    <ul module="product_ListItem">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="item" id="anchorBoxId_{$product_no}">
+                <div class="box">
+                    <a href="/product/detail.html{$param}" name="anchorBoxName_{$product_no}"><img src="{$image_medium}" id="{$image_medium_id}" alt="" class="thumb" /></a>
+                    <div class="status">
+                        <div class="icon">{$soldout_icon} {$recommend_icon} {$new_icon} {$product_icons} {$benefit_icons}</div>
+                    </div>
+                    <p class="name">
+                        <a href="/product/detail.html{$param}" class="{$product_name_display|display}"><strong class="title {$product_name_title_display|display}">{$product_name_title} :</strong> {$product_name}</a>
+                    </p>
+                    <ul module="product_ListItem">
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                        <li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
